@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/variables.scss";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.action.action-icon {
+    padding: 10px;
+    margin: 10px;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $black-700;
+        border-radius: 5px;
+        cursor: pointer;
+        color: $black-300;
+    }
+}
+
+.action.action-btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid $black-700;
+    background: $black-900;
+    margin: 5px;
+    color: $black-400;
+    font-weight: $font-weight-hard;
+
+    &:hover {
+        background-color: $black-700;
+        cursor: pointer;
+        color: $black-300;
+        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+}

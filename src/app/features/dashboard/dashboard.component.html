@@ -1,12 +1,17 @@
-<div class="header">
-  <app-header></app-header>
-</div>
-<div class="breakdown">
-  <app-vendor-breakdown></app-vendor-breakdown>
-</div>
-<div class="monitoring">
-  <app-vendor-monitoring></app-vendor-monitoring>
-</div>
-<div class="grid">
-  <app-data-grid></app-data-grid>
+<div class="dashboard-container">
+    <div class="card header">
+        <app-header></app-header>
+    </div>
+    <div class="vendor">
+        <div class="card breakdown">
+            <app-vendor-breakdown></app-vendor-breakdown>
+        </div>
+        <div class="card monitoring">
+            <app-vendor-monitoring></app-vendor-monitoring>
+        </div>
+    </div>
+    <div class="grid card" *ngIf="(gridData$ | async) as gridData">
+        <app-data-grid [title]="gridTitle" [columns]="gridData.grid_columns"
+            [data]="gridData.grid_data"></app-data-grid>
+    </div>
 </div>

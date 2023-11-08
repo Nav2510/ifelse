@@ -1,0 +1,11 @@
+@import "../../../../assets/styles/variables.scss";
+
+.tag-container {
+    display: inline-block;
+    border: 1px solid;
+    padding: 1px 8px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 5px;
+    font-weight: $font-weight-bold;
+}

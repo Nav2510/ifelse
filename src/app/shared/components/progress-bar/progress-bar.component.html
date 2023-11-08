@@ -1,0 +1,9 @@
+<div class="progress-container">
+    <div class="progress-wrapper">
+        <div class="bar background-bar"></div>
+        <div class="bar progress-bar" [ngStyle]="getWidth(percentValue)"></div>
+    </div>
+    <div class="progress-value">
+        {{percentValue}}%
+    </div>
+</div>

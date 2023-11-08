@@ -1,0 +1,37 @@
+@import "../../../../assets/styles/variables.scss";
+
+.progress-container {
+    display: flex;
+    align-items: center;
+
+    .progress-wrapper {
+        position: relative;
+        width: 150px;
+        content: '';
+
+        .bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            display: inline-block;
+            height: 10px;
+            border-radius: 10px;
+        }
+
+        .background-bar {
+            width: 100%;
+            background-color: $black-800;
+        }
+
+        .progress-bar {
+            background-color: $violet-400;
+        }
+    }
+
+    .progress-value {
+        margin-left: 10px;
+        color: $black-400;
+        font-weight: $font-weight-bold;
+    }
+}

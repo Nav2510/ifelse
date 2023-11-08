@@ -1,0 +1,21 @@
+@import "../../../../assets/styles/variables.scss";
+
+.header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-title {
+        font-size: 30px;
+        font-weight: $font-weight-bold;
+        color: $black-300;
+        letter-spacing: .8px;
+    }
+
+    .actions-wrapper {
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,1 +1,18 @@
-<p>side-nav works!</p>
+<div class="side-nav-container">
+    <div class="flex-center basic-actions">
+        <span class="logo">
+            IfElse
+        </span>
+        <span class="material-symbols-outlined action action-icon" *ngFor="let action of basicActions">
+            {{action}}
+        </span>
+    </div>
+    <div class="flex-center setting-actions">
+        <span class="material-symbols-outlined action action-icon" *ngFor="let action of settingActions">
+            {{action}}
+        </span>
+        <div class="profile-wrapper">
+            <img src="https://avatars.githubusercontent.com/u/24311874?v=4" alt="">
+        </div>
+    </div>
+</div>
