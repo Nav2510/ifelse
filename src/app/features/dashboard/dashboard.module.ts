@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { HighchartsChartModule } from 'highcharts-angular';
+
 import { DashboardComponent } from './dashboard.component';
 import { VendorBreakdownComponent } from './vendor-breakdown/vendor-breakdown.component';
 import { VendorMonitoringComponent } from './vendor-monitoring/vendor-monitoring.component';
@@ -14,6 +16,6 @@ import { DataGridModule } from '../../shared/components/data-grid/data-grid.modu
     VendorMonitoringComponent,
     HeaderComponent,
   ],
-  imports: [CommonModule, DataGridModule],
+  imports: [CommonModule, DataGridModule, HighchartsChartModule],
 })
 export class DashboardModule {}

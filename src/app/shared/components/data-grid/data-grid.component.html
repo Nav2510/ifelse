@@ -1,9 +1,11 @@
-<div class="grid-container">
-    <div class="grid-header">
-        <div class="grid-wrapper">
-            <span class="grid-title">{{title}}</span>
-            <span class="tag count-tag" *ngIf="data"><app-tag [bgColor]="countTagColor.background_color"
-                    [textColor]="countTagColor.text_color" content="{{data.length}} users"></app-tag></span>
+<div class="card container grid-container">
+    <div class="header">
+        <div class="wrapper">
+            <div class="title-wrapper">
+                <span class="title">{{title}}</span>
+                <span class="tag count-tag" *ngIf="data"><app-tag [bgColor]="countTagColor.background_color"
+                        [textColor]="countTagColor.text_color" content="{{data.length}} users"></app-tag></span>
+            </div>
         </div>
         <span class="material-symbols-outlined action action-icon">
             more_vert

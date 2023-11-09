@@ -7,7 +7,7 @@ body {
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: $font-family;
 }
 
 // Setting border box for layout consistency
@@ -60,6 +60,7 @@ input[type="checkbox"]:checked::before {
 // Action button styles
 .action.action-btn {
     display: flex;
+    height: 40px;
     align-items: center;
     padding: 5px 15px;
     border-radius: 5px;
@@ -68,6 +69,10 @@ input[type="checkbox"]:checked::before {
     margin: 5px;
     color: $black-400;
     font-weight: $font-weight-hard;
+
+    span {
+        margin: 5px;
+    }
 
     &:hover {
         background-color: $black-600;
@@ -99,5 +104,79 @@ input[type="checkbox"]:checked::before {
         color: $black-400;
         transform: translate(-50%, -50%);
         display: inline-block;
+    }
+}
+
+// card styles
+.card.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header {
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        .action-icon {
+            color: $black-500;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .title {
+                color: $black-300;
+                font-size: 24px;
+                font-weight: $font-weight-hard;
+            }
+
+            .sub-title {
+                font-size: 20px;
+                color: $black-500;
+                margin-top: 15px;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+
+    .header.border-bottom {
+        border-bottom: 1px solid $black-700;
+    }
+
+    .footer {
+        height: 95px;
+        padding: 10px;
+        border-top: 1px solid $black-700;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.column-chart {
+
+    .highcharts-point {
+        stroke-width: 0;
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15;
+    }
+
+    .highcharts-axis-title {
+        font-size: 16px;
+        font-family: $font-family;
+        font-weight: $font-weight-bold;
+        color: $black-300;
+    }
+
+    .highcharts-xaxis-labels {
+        text {
+            color: $black-500
+        }
     }
 }

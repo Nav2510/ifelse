@@ -1,23 +1,9 @@
 @import "../../../../assets/styles/variables.scss";
 
 .grid-container {
-
-    .grid-header {
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-
-        .action-icon {
-            color: $black-500;
-        }
-
-        .grid-wrapper {
-            .grid-title {
-                font-size: 24px;
-                font-weight: $font-weight-bold;
-            }
+    .header {
+        .wrapper {
+            padding-top: 20px;
 
             .count-tag {
                 margin-left: 10px;
