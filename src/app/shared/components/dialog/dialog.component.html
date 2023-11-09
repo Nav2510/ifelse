@@ -1,0 +1,18 @@
+<div class="dialog-container">
+    <h1>{{data.header}}</h1>
+    <hr>
+    <p>{{data.subHeading}}</p>
+    <div *ngIf="data.type === 'edit'" class="content-wrapper">
+        <span>Name: </span>
+        <span>{{data.content.name.first_name}}</span>
+    </div>
+    <hr>
+    <div class="action-wrapper">
+        <button (click)="onOk()" class="action action-btn">
+            Ok
+        </button>
+        <button (click)="onCancel()" class="action action-btn">
+            Cancel
+        </button>
+    </div>
+</div>

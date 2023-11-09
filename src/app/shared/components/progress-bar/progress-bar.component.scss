@@ -12,7 +12,8 @@
         .bar {
             position: absolute;
             left: 0;
-            top: 0;
+            top: 50%;
+            transform: translateY(-50%);
             content: '';
             display: inline-block;
             height: 10px;
@@ -21,10 +22,13 @@
 
         .background-bar {
             width: 100%;
-            background-color: $black-800;
+            background-color: $black-700;
         }
 
         .progress-bar {
+            animation-name: barWidthAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
             background-color: $violet-400;
         }
     }
@@ -33,5 +37,11 @@
         margin-left: 10px;
         color: $black-400;
         font-weight: $font-weight-bold;
+    }
+}
+
+@keyframes barWidthAnimation {
+    from {
+        width: 0px;
     }
 }

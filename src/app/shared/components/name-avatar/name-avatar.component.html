@@ -1,1 +1,10 @@
-<p>name-avatar works!</p>
+<div class="name-avatar-container">
+    <div class="profile-icon">
+        <img *ngIf="src" [src]="src" [alt]="firstName">
+        <span *ngIf="!src">{{getInitials(firstName, lastName)}}</span>
+    </div>
+    <div class="name-wrapper">
+        <span class="name">{{firstName}} {{lastName}}</span>
+        <span class="username">{{username}}</span>
+    </div>
+</div>

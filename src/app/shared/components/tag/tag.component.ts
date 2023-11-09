@@ -11,6 +11,7 @@ const BORDER_COLOR = '#78787844';
 export class TagComponent {
   private _textColor: string = TEXT_COLOR;
 
+  @Input() showIcon: boolean = false;
   @Input() content: string = '';
   @Input() bgColor: string = '#ededed';
   @Input()
